@@ -1,0 +1,45 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Eclipse Core
+.project
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Subversion
+.svn/
+
+.settings
+target
+.idea
+.fbExcludeFilterFile
+*.iml
+*.ipr
+*.iws
+.fbprefs
+*.orig
+temp.xml
+derby.log
+.clover
+*.DS_Store
+.metadata
+.gradle
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+*.releaseBackup
+local.properties
+.settings/
+.loadpath
+/META-INF/
+src/reports/findbugs/
+release.properties
+/properties/
