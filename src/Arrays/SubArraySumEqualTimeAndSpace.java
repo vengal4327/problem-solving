@@ -19,7 +19,7 @@ class Solution {
           
         if(countByCummSum.containsKey(sum-k))
         {
-         // countByCummSum.get(sum-k) -- Is to account for the sub arrays whose's sum=0    
+         // countByCummSum.get(sum-k) -- Is to account for the sub arrays whose sum=0    
          count = count + countByCummSum.get(sum-k);   
         }
         
