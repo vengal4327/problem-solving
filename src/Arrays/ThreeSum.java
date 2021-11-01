@@ -5,7 +5,7 @@ class Solution {
         //Example-1: [0,0,0] 
        // For each element in array, do two-pointer approach of finding other complement elements..
        // Step-1: Sort array in order to perform two-pointer approach
-       // For each element, get complementary sum 
+       // Step-2: For each element, get complementary sum 
        //        If sum matches with two pointers --> add triplet to result and Inc start, decrement end
        //        else If two_pointers_sum < sum --> start++
        //        else end-- 
