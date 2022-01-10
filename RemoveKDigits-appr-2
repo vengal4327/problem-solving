@@ -1,0 +1,35 @@
+class Solution {
+  public String removeKdigits(String num, int k) {
+      
+   //Examples-- "100280" and 1
+   //   "1432219", k = 3 --> Output-1219
+      
+    Stack<Character> stack = new Stack<Character>();
+        
+    for(char digit : num.toCharArray()) {
+      while(stack.size() > 0 && k > 0 && stack.peek() > digit) {
+        stack.pop();
+        k -= 1;
+      }
+      stack.push(digit);
+      //stack.push(Character.getNumericValue(digit));
+    }
+        
+    /* remove the remaining digits from the tail. */
+    for(int i=0; i<k; ++i) {
+      stack.pop();
+    }
+            
+    StringBuilder ret = new StringBuilder();
+    while(!stack.isEmpty()) {
+      ret.insert(0, stack.pop());
+    }
+      
+    // Trim zeros in the beginning 
+    //Write logic here to remove trailing zeros..   
+        
+    /* return the final string  */
+    if (ret.length() == 0) return "0";
+    return ret.toString();
+  }
+}
