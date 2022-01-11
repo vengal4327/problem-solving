@@ -5,6 +5,7 @@ class Solution {
    //   "1432219", k = 3 --> Output-1219
    // "2412219", k=3
    // "123456", k=2
+   //  "123465", k=2
       
     Stack<Character> stack = new Stack<Character>();
         
